@@ -42,13 +42,15 @@ const bikes = [
 
 ];
 
+let lightestBike = bikes[0];
 
-let indexWeight = [];
 
 for (let i = 0; i < bikes.length; i++) {
-    indexWeight.push(bikes[i].weigth)
-    console.log(indexWeight);
+    
+    if (bikes[i].weigth < lightestBike.weigth ) {
+        lightestBike = bikes[i]
+    }
+        
 }
 
-const lightestBike = Math.min(indexWeight)
 console.log(lightestBike);
