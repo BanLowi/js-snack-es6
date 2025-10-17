@@ -53,4 +53,18 @@ for (let i = 0; i < bikes.length; i++) {
         
 }
 
-console.log(lightestBike);
+function weightCalculator(value) {
+
+    let lightestBike = value[0];
+
+
+    for (let i = 0; i < value.length; i++) {
+        
+        if (value[i].weigth < lightestBike.weigth ) {
+            lightestBike = value[i]
+        }
+            
+    }
+
+    return lightestBike
+}
